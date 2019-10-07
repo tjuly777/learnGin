@@ -1,0 +1,21 @@
+{{ template "head" }}
+<body>
+    <article>
+        This is a test login form.
+        <form method="post" class="loginForm" action="/user/login">
+            <fieldset>
+                <label for="username">UserName</label>
+                <input type="text" name="username" id="username">
+                <br>
+                <label for="username">Password</label>
+                <input type="text" name="password" id="password">
+                <br>
+
+                <label for="signup">または</label><a href="/signup">サインアップ</a>
+            </fieldset>
+
+            <input type="submit" value="送信">
+        </form>
+    </article>
+</body>
+{{ template "foot" }}
